@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <ctime>
+
+
+
+using namespace std;
+
+int main()
+{
+	int N=0;
+	
+	
+    setlocale(LC_ALL, "rus");
+    cout << "Начать игру: 1" << endl;
+    cout << "Выйти: 0" << endl;
+    cin >> N; 
+    
+	if (N==0)
+    {
+    	system ("cls");
+		cout << "Игра окончена" << endl;
+		return 0;	
+    }
+    
+	if (N==1)
+    {
+    	system ("cls");
+		cout << "Игра началась" << endl;
+    }
