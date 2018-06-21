@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Werror -std=c99
-OBJ = gcc -c $< -o $@ $(CFLAGS)
+OBJ = g++ -c $< -o $@ $(CFLAGS)
 
 .PHONY: clean all bin build  bin/prog
 
