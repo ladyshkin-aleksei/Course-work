@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror -std=c99
+CFLAGS = -Wall -Werror -std=c++0x
 OBJ = g++ -c $< -o $@ $(CFLAGS)
 
 .PHONY: clean all bin build  bin/prog
