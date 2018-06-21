@@ -8,13 +8,13 @@ all: bin build  bin/prog
 bin/prog:build/main.o build/Nachalo.o build/Vvod_bukv.o 
 	gcc $^ -o $@ $(CFLAGS)
  
-build/main.o: src/main.c
+build/main.o: src/main.cpp
 	$(OBJ)
 
-build/Nachalo.o: src/main.c
+build/Nachalo.o: src/Nachalo
 	$(OBJ)
 
-build/Vvod_bukv.o: src/main.c
+build/Vvod_bukv.o: src/Vvod_bukv
 	$(OBJ)
 
 
