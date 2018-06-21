@@ -1,19 +1,21 @@
-CXX = gcc
-CFLAGS = -c -std=c++11 
-FLAGS =  -lsfml-graphics -lsfml-window -lsfml-system 
-
-OBJECTS = build/main.o
+CFLAGS = -Wall -Werror -std=c99
+OBJ = gcc -c $< -o $@ $(CFLAGS)
 
 .PHONY: clean all bin build  bin/prog
 
 all: bin build  bin/prog
 
-bin/prog: $(OBJECTS) 
-	$(CXX) $(OBJECTS) -o bin/prog $(FLAGS) 
+bin/prog: build/Nachalo.o build/Vvod_bukv.o build/main.o
+	gcc $^ -o $@ $(CFLAGS) 
 
-build/main.o: src/version5
-	$(CXX) $(CFLAGS) src/version5 -o build/main.o 
+build/Nachalo.o: src/main.c
+	$(OBJ)
 
+build/Vvod_bukv.o: src/main.c
+	$(OBJ)
+
+build/main.o: src/main.c
+	$(OBJ)
 build:
 	mkdir  build
 bin:
