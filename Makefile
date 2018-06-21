@@ -1,12 +1,14 @@
-CFLAGS = -Wall -Werror -std=c++0x
-OBJ = g++ -c $< -o $@ $(CFLAGS)
+CC = gcc
+CFLAGS = -Wall -Werror -std=c99
+
+OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 
 .PHONY: clean all bin build  bin/prog
 
 all: bin build  bin/prog
 
 bin/prog:build/main.o build/Nachalo.o build/Vvod_bukv.o 
-	gcc $^ -o $@ $(CFLAGS)
+	$(CC) $(CFLAGS) $^ -o $@
  
 build/main.o: src/main.cpp
 	$(OBJ)
