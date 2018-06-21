@@ -5,8 +5,11 @@ OBJ = gcc -c $< -o $@ $(CFLAGS)
 
 all: bin build  bin/prog
 
-bin/prog: build/Nachalo.o build/Vvod_bukv.o build/main.o
+bin/prog:build/version5.o build/Nachalo.o build/Vvod_bukv.o build/main.o
 	gcc $^ -o $@ $(CFLAGS) 
+
+build/version.o: src/main.c
+	$(OBJ)
 
 build/Nachalo.o: src/main.c
 	$(OBJ)
