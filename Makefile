@@ -19,4 +19,4 @@ build:
 bin:
 	mkdir -p bin 
 clean:
--rm -rf build bin/prog
+	-rm -rf build bin/prog
