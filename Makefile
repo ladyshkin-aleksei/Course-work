@@ -11,8 +11,8 @@ all: bin build  bin/prog
 bin/prog: $(OBJECTS) 
 	$(CXX) $(OBJECTS) -o bin/prog $(FLAGS) 
 
-build/main.o: src/main.cpp 
-	$(CXX) $(CFLAGS) src/main.cpp -o build/main.o 
+build/main.o: src/main.c 
+	$(CXX) $(CFLAGS) src/main.c -o build/main.o 
 
 build:
 	mkdir  build
