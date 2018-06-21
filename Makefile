@@ -1,4 +1,4 @@
-CC = g++
+CC = gcc
 CFLAGS = -Wall -Werror -std=c++0x
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
@@ -10,13 +10,13 @@ all: bin build  bin/prog
 bin/prog:build/main.o build/Nachalo.o build/Vvod_bukv.o 
 	$(CC) $(CFLAGS) $^ -o $@
  
-build/main.o: src/main.cpp
+build/main.o: src/main.c
 	$(OBJ)
 
-build/Nachalo.o: src/Nachalo
+build/Nachalo.o: src/Nachalo.c
 	$(OBJ)
 
-build/Vvod_bukv.o: src/Vvod_bukv
+build/Vvod_bukv.o: src/Vvod.c
 	$(OBJ)
 
 
