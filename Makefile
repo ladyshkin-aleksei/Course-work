@@ -5,10 +5,10 @@ OBJ = gcc -c $< -o $@ $(CFLAGS)
 
 all: bin build  bin/prog
 
-bin/prog:build/version5.o build/Nachalo.o build/Vvod_bukv.o build/main.o
-	gcc $^ -o $@ $(CFLAGS) 
-
-build/version.o: src/main.c
+bin/prog:build/main.o build/Nachalo.o build/Vvod_bukv.o 
+	gcc $^ -o $@ $(CFLAGS)
+ 
+build/main.o: src/main.c
 	$(OBJ)
 
 build/Nachalo.o: src/main.c
@@ -17,8 +17,7 @@ build/Nachalo.o: src/main.c
 build/Vvod_bukv.o: src/main.c
 	$(OBJ)
 
-build/main.o: src/main.c
-	$(OBJ)
+
 build:
 	mkdir  build
 bin:
