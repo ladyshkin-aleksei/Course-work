@@ -1,4 +1,4 @@
-CXX = gpp
+CXX = gcc
 CFLAGS = -c -std=c++11 
 FLAGS =  -lsfml-graphics -lsfml-window -lsfml-system 
 
