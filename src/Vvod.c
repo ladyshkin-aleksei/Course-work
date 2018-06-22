@@ -1,13 +1,12 @@
 #include <iostream>
-//#include <math.h>
 #include <stdio.h>
-//#include <stdlib.h>
 #include <ctime>
 
 using namespace std;
 
 void vvod()
-{	
+{
+    setlocale(LC_ALL, "rus");	
     char alphavit[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     char slovo[11]={'p','r','o','g','r','a','m','m','i','s','t'};
     char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
