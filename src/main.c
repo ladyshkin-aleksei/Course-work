@@ -3,26 +3,26 @@
 #include <stdlib.h>
 #include <iostream.h>
 
-
+using namespace std;
 
 
 int main()
 {
 	int N=0;
-	//using namespace std;
+	
 
 	while (N != 1 || N != 0)
 	{
 		//setlocale(LC_ALL, "rus");
 		std::cout << std::endl;
-	    std::cout << "Начать игру: 1" << std::endl;
-	    std::cout << "Выход: 0" << std::endl;
-	    std::cin >> N; 
+	    cout << "Начать игру: 1" << endl;
+	    cout << "Выход: 0" << endl;
+	    cin >> N; 
 	    
 		if (N == 0)
 	    {
 	    	system ("cls");
-			std::cout << "Игра окончена" << std::endl;
+			cout << "Игра окончена" << endl;
 			break;	
 	    } 
 	    
@@ -36,9 +36,9 @@ int main()
 	    
 	    if (N !=1 && N !=0)
 	    {
-	    	std::cout << std::endl;
+	    	cout << endl;
 	    	printf("Не верный режим");
-	    	std::cout << std::endl;
+	    	cout << endl;
 	    	continue;
 	    }
 	}	
