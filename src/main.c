@@ -1,3 +1,5 @@
+#include "Nachalo.c"
+#include "Vvod.c"
 #include <iostream>
 #include <stdio.h>
 //#include <math.h>
