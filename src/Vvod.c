@@ -14,8 +14,8 @@ void vvod()
 	char slovo[11]={'p','r','o','g','r','a','m','m','i','s','t'};
 	char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
 	char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
-	printf (Slovo);
 	char bukva = ' ';
+	printf (Slovo);
 	int live = 6;
 	int neizvestnie = 11;
 	int pravilno;
