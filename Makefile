@@ -10,7 +10,7 @@ all: bin build  bin/prog
 bin/prog: build/Nachalo.o build/Vvod_bukv.o build/main.o
 	$(CC) $(CFLAGS) $^ -o $@
  
-build/Nachalo.o: src/Nachalo.c src/Nachalo.h
+build/Nachalo.o: src/Nachalo.c
 	$(OBJ)
 
 build/Vvod_bukv.o: src/Vvod.c 
