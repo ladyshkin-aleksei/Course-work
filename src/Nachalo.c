@@ -1,6 +1,6 @@
-#include <iostream>
+//#include <iostream>
 //#include <math.h>
-#include <stdio.h>
+//#include <stdio.h>
 //#include <stdlib.h>
 //#include <ctime>
 
