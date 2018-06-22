@@ -1,5 +1,5 @@
-CC = gcc
-CFLAGS = -Wall -Werror -std=c99
+CC = g++
+CFLAGS = -Wall -Werror -std=c++11
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 
