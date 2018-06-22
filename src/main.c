@@ -8,20 +8,20 @@
 int main()
 {
 	int N=0;
-	using namespace std;
+	//using namespace std;
 
 	while (N != 1 || N != 0)
 	{
 		//setlocale(LC_ALL, "rus");
-		cout << endl;
-	    cout << "Начать игру: 1" << endl;
-	    cout << "Выход: 0" << endl;
-	    cin >> N; 
+		std::cout << std::endl;
+	    std::cout << "Начать игру: 1" << std::endl;
+	    std::cout << "Выход: 0" << std::endl;
+	    std::cin >> N; 
 	    
 		if (N == 0)
 	    {
 	    	system ("cls");
-			cout << "Игра окончена" << endl;
+			std::cout << "Игра окончена" << std::endl;
 			break;	
 	    } 
 	    
@@ -35,9 +35,9 @@ int main()
 	    
 	    if (N !=1 && N !=0)
 	    {
-	    	cout << endl;
+	    	std::cout << std::endl;
 	    	printf("Не верный режим");
-	    	cout << endl;
+	    	std::cout << std::endl;
 	    	continue;
 	    }
 	}	
