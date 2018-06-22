@@ -1,8 +1,5 @@
-//#include <iostream>
-//#include <math.h>
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <ctime>
+#include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
