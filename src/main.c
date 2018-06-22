@@ -28,7 +28,7 @@ void vvod()
     char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
     char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
     char bukva = ' ';
-    cout <<("Slovo")<< '\n';
+    printf ("%s", Slovo);
     int live = 6;
     int neizvestnie = 11;
     int pravilno;
@@ -76,7 +76,7 @@ void vvod()
                     neizvestnie--;
                     Slovo[i] = slovo[i];
                     system ("clear");				
-                    cout <<("Slovo")<< '\n';
+                    printf ("%s", Slovo);
                     pravilno = true;				
                     }
 			
