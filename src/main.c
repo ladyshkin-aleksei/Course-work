@@ -6,10 +6,10 @@
 
 
 using namespace std;
-setlocale(LC_ALL, "rus");
 
 void nachalo()
-{		
+{	
+	setlocale(LC_ALL, "rus");	
 	cout << "Правила игры: " << endl;
 	cout << endl;
 	cout << endl;
@@ -29,6 +29,7 @@ void nachalo()
 
 void vvod()
 {	
+	setlocale(LC_ALL, "rus");
 	char alphavit[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 	char slovo[11]={'p','r','o','g','r','a','m','m','i','s','t'};
 	char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
@@ -161,6 +162,7 @@ void vvod()
 
 int main()
 {
+	setlocale(LC_ALL, "rus");
 	int N=0;
 	
 
