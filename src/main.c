@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <iostream>
+#include <iostream.h>
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main()
 	while (N != 1 || N != 0)
 	{
 		//setlocale(LC_ALL, "rus");
-		std::cout << std::endl;
+		cout << endl;
 	    cout << "Начать игру: 1" << endl;
 	    cout << "Выход: 0" << endl;
 	    cin >> N; 
