@@ -6,6 +6,7 @@
 
 
 using namespace std;
+setlocale(LC_ALL, "rus");
 
 void nachalo()
 {		
@@ -165,7 +166,7 @@ int main()
 
 	while (N != 1 || N != 0)
 	{
-		setlocale(LC_ALL, "rus");
+
 		cout << endl;
 	    cout << "Начать игру: 1" << endl;
 	    cout << "Выход: 0" << endl;
