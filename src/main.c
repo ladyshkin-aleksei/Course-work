@@ -8,15 +8,15 @@ using namespace std;
 
 void nachalo()
 {		
-    cout << "Правила игры: " << endl;
-    cout << endl;
-    cout << "Добро пожаловать в игру <Виселица>! Тебе нужно будет угадать загаданое мною слово, используя английские буквы на своей клавиатуре. Если в слове не будет твоей буквы, то количество жизней, которых 6 штук, будут уменьшаться. Если угадаешь моё слово, то ты выйграл, если нет, то можешь начать занаво. Удачи тебе!! " << endl;
-    cout << endl;
-    cout << "Буквы, которые можно использовать: " << endl;
-    cout <<("a b c d e f g h i j k l m n o p q r s t u v w x y z")<< endl;
-    cout << endl;
-    cout << "Игра началась!" << endl;
-    cout << endl;
+    cout << "Правила игры: " << '\n';
+    cout << '\n';
+    cout << "Добро пожаловать в игру <Виселица>! Тебе нужно будет угадать загаданое мною слово, используя английские буквы на своей клавиатуре. Если в слове не будет твоей буквы, то количество жизней, которых 6 штук, будут уменьшаться. Если угадаешь моё слово, то ты выйграл, если нет, то можешь начать занаво. Удачи тебе!! " << '\n';
+    cout << '\n';
+    cout << "Буквы, которые можно использовать: " << '\n';
+    cout <<("a b c d e f g h i j k l m n o p q r s t u v w x y z")<< '\n';
+    cout << '\n';
+    cout << "Игра началась!" << '\n';
+    cout << '\n';
     system("pause");
     system("clear");
 }
@@ -28,21 +28,21 @@ void vvod()
     char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
     char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
     char bukva = ' ';
-    cout <<("%s", Slovo)<< endl;
+    cout <<("Slovo")<< '\n';
     int live = 6;
     int neizvestnie = 11;
     int pravilno;
     int mesto = 0;
 	
     if (live == 6){
-        cout << endl;
-        cout << "Всего 6 жизней" << endl;
+        cout << '\n';
+        cout << "Всего 6 жизней" << '\n';
         }
 		
         while (true){	
-            cout << endl;
-            cout << "Введите букву: " << endl;
-            cout << endl;
+            cout << '\n';
+            cout << "Введите букву: " << '\n';
+            cout << '\n';
             cin >> bukva;				
 
             pravilno = false;
@@ -53,16 +53,16 @@ void vvod()
                     }
 			
                     if (!pravilno){
-                        cout << endl;
-                        cout << "Смените раскладку!" << endl;
+                        cout << '\n';
+                        cout << "Смените раскладку!" << '\n';
                         continue;
                         }
 		
             pravilno = false;
             for (int i=0; i<17; i++)
                  if (bukva == povtor[i]){
-                     cout << endl;
-                     cout << "Эта буква уже была использована" << endl;
+                     cout << '\n';
+                     cout << "Эта буква уже была использована" << '\n';
                      pravilno = true;
                      }
 
@@ -76,7 +76,7 @@ void vvod()
                     neizvestnie--;
                     Slovo[i] = slovo[i];
                     system ("clear");				
-                    printf ("%s",Slovo);
+                    cout <<("Slovo")<< '\n';
                     pravilno = true;				
                     }
 			
@@ -84,51 +84,51 @@ void vvod()
             mesto++;
 				
             if (!pravilno){
-                cout << endl;
-                cout << "Не правильная буква!" << endl;
+                cout << '\n';
+                cout << "Не правильная буква!" << '\n';
                 live--;		
                 }
 				
             if (live == 6){
-                cout << endl;
-                cout << "Осталось 6 жизней" << endl;
+                cout << '\n';
+                cout << "Осталось 6 жизней" << '\n';
                 }
 				
             if (live == 5){
-                cout << endl;
-                cout << "Осталось 5 жизней" << endl;
+                cout << '\n';
+                cout << "Осталось 5 жизней" << '\n';
                 }
 				
             if (live == 4){
-                cout << endl;
-                cout << "Осталось 4 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 4 жизни" << '\n';
                 }
 				
             if (live == 3){
-                cout << endl;
-                cout << "Осталось 3 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 3 жизни" << '\n';
                 }
 				
             if (live == 2){
-                cout << endl;
-                cout << "Осталось 2 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 2 жизни" << '\n';
                 }
 				
             if (live == 1){
-                cout << endl;
-                cout << "Осталась 1 жизнь" << endl;
+                cout << '\n';
+                cout << "Осталась 1 жизнь" << '\n';
                 }
 				
             if (live == 0){
                 live--;
                 system ("clear");
-                cout << "Вы проиграли((" << endl;
+                cout << "Вы проиграли((" << '\n';
                 break;
                 }
 				
             if (neizvestnie == 0){
                 system ("clear");
-                cout << "Вы выйграли!!!" << endl;
+                cout << "Вы выйграли!!!" << '\n';
                 break;
                 }
         }
@@ -142,14 +142,14 @@ int main()
     while (N != 1 || N != 0)
     {
 
-        cout << endl;
-        cout << "Начать игру: 1" << endl;
-        cout << "Выход: 0" << endl;
+        cout << '\n';
+        cout << "Начать игру: 1" << '\n';
+        cout << "Выход: 0" << '\n';
         cin >> N; 
 	    
         if (N == 0){
             system ("clear");
-            cout << "Игра окончена" << endl;
+            cout << "Игра окончена" << '\n';
             break;
             } 
 	    
@@ -161,9 +161,9 @@ int main()
             }
 	    
         if (N !=1 && N !=0){
-            cout << endl;
+            cout << '\n';
             printf("Не верный режим");
-            cout << endl;
+            cout << '\n';
             continue;
             }
     }	
