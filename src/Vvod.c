@@ -13,7 +13,7 @@ void vvod()
     char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
     char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
     char bukva = ' ';
-    cout << ("%s",Slovo) << endl;
+    cout <<("%s", Slovo)<< endl;
     int live = 6;
     int neizvestnie = 11;
     int pravilno;
