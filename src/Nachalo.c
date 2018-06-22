@@ -1,4 +1,3 @@
-#include "Nachalo.h"
 #include <iostream>
 #include <stdio.h>
 
