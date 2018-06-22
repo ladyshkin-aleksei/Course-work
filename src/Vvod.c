@@ -15,7 +15,7 @@ void vvod()
 	char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
 	char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
 	char bukva = ' ';
-	fprintf ("%s", Slovo);
+	printf (Slovo);
 	int live = 6;
 	int neizvestnie = 11;
 	int pravilno;
@@ -72,7 +72,7 @@ void vvod()
 				Slovo[i] = slovo[i];
 
 				system ("cls");				
-				fprintf("%s", Slovo);
+				printf(Slovo);
 				pravilno = true;				
 			}
 			
