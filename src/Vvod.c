@@ -13,21 +13,21 @@ void vvod()
     char Slovo[11]={'?','?','?','?','?','?','?','?','?','?','?'};
     char povtor[17]={'*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*','*',};
     char bukva = ' ';
-    cout <<("%s", Slovo)<< endl;
+    cout <<("Slovo")<< '\n';
     int live = 6;
     int neizvestnie = 11;
     int pravilno;
     int mesto = 0;
 	
     if (live == 6){
-        cout << endl;
-        cout << "Всего 6 жизней" << endl;
+        cout << '\n';
+        cout << "Всего 6 жизней" << '\n';
         }
 		
         while (true){	
-            cout << endl;
-            cout << "Введите букву: " << endl;
-            cout << endl;
+            cout << '\n';
+            cout << "Введите букву: " << '\n';
+            cout << '\n';
             cin >> bukva;				
 
             pravilno = false;
@@ -38,16 +38,16 @@ void vvod()
                     }
 			
                     if (!pravilno){
-                        cout << endl;
-                        cout << "Смените раскладку!" << endl;
+                        cout << '\n';
+                        cout << "Смените раскладку!" << '\n';
                         continue;
                         }
 		
             pravilno = false;
             for (int i=0; i<17; i++)
                  if (bukva == povtor[i]){
-                     cout << endl;
-                     cout << "Эта буква уже была использована" << endl;
+                     cout << '\n';
+                     cout << "Эта буква уже была использована" << '\n';
                      pravilno = true;
                      }
 
@@ -61,7 +61,7 @@ void vvod()
                     neizvestnie--;
                     Slovo[i] = slovo[i];
                     system ("clear");				
-                    printf ("%s",Slovo);
+                    cout <<("Slovo")<< '\n';
                     pravilno = true;				
                     }
 			
@@ -69,51 +69,51 @@ void vvod()
             mesto++;
 				
             if (!pravilno){
-                cout << endl;
-                cout << "Не правильная буква!" << endl;
+                cout << '\n';
+                cout << "Не правильная буква!" << '\n';
                 live--;		
                 }
 				
             if (live == 6){
-                cout << endl;
-                cout << "Осталось 6 жизней" << endl;
+                cout << '\n';
+                cout << "Осталось 6 жизней" << '\n';
                 }
 				
             if (live == 5){
-                cout << endl;
-                cout << "Осталось 5 жизней" << endl;
+                cout << '\n';
+                cout << "Осталось 5 жизней" << '\n';
                 }
 				
             if (live == 4){
-                cout << endl;
-                cout << "Осталось 4 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 4 жизни" << '\n';
                 }
 				
             if (live == 3){
-                cout << endl;
-                cout << "Осталось 3 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 3 жизни" << '\n';
                 }
 				
             if (live == 2){
-                cout << endl;
-                cout << "Осталось 2 жизни" << endl;
+                cout << '\n';
+                cout << "Осталось 2 жизни" << '\n';
                 }
 				
             if (live == 1){
-                cout << endl;
-                cout << "Осталась 1 жизнь" << endl;
+                cout << '\n';
+                cout << "Осталась 1 жизнь" << '\n';
                 }
 				
             if (live == 0){
                 live--;
                 system ("clear");
-                cout << "Вы проиграли((" << endl;
+                cout << "Вы проиграли((" << '\n';
                 break;
                 }
 				
             if (neizvestnie == 0){
                 system ("clear");
-                cout << "Вы выйграли!!!" << endl;
+                cout << "Вы выйграли!!!" << '\n';
                 break;
                 }
         }
