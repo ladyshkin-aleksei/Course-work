@@ -3,21 +3,21 @@ CFLAGS = -Wall -Werror -std=c++11
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 MKDIR_BUILD_SRC = mkdir -p build/src
-MKDIR_BUILD_TESTS = mkdir -p build/tests
+MKDIR_BUILD_TEST = mkdir -p build/test
 
-.PHONY: clean tests
+.PHONY: clean test
 
 default: bin/prog
 
-tests: bin/tests
+test: bin/test
 	$<
 
-bin/tests: build/tests/main.o build/src/Vvod.o build/src/Nachalo.o
+bin/test: build/test/main.o build/src/Vvod.o build/src/Nachalo.o
 	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
 
-build/tests/main.o: tests/main.c thirdparty/ctest.h
-	$(MKDIR_BUILD_TESTS) 
+build/test/main.o: test/main.c thirdparty/ctest.h
+	$(MKDIR_BUILD_TEST) 
 	$(OBJ) -I thirdparty -I src
 
 bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
