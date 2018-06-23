@@ -17,7 +17,7 @@ void nachalo()
 	cout << "Игра началась!" << '\n';
 	cout << '\n';
 	cout << "Нажмите любую клавишу для продолжения" << '\n';
-	cin.get ();
+	getch();
 	system ("clear"); 
 
 }
