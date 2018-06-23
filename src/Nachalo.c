@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stdio.h>
-#include <conio.h>
 
 using namespace std;
 
@@ -18,6 +17,7 @@ void nachalo()
 	cout << '\n';
 	cout << "Нажмите любую клавишу для продолжения" << '\n';
 	getchar();
+	return 0;
 	system ("clear"); 
 
 }
