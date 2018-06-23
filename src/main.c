@@ -1,9 +1,7 @@
-#include "Nachalo.c"
-#include "Vvod.c"
+//#include "Nachalo.c"
+#include "Vvod.h"
 #include <iostream>
 #include <stdio.h>
-//#include <math.h>
-//#include <stdlib.h>
 #include <ctime>
 
 using namespace std;
