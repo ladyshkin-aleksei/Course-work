@@ -7,13 +7,13 @@ OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 
 default: bin/prog
 
-tests: bin/prog_tests
+tests: bin/tests
 	$<
 
-bin/prog_tests: build/tests/Nachalo.o build/tests/Vvod.o build/tests/main_tests.o
+bin/tests: build/tests/Nachalo.o build/tests/Vvod.o build/tests/main.o
 	$(CC) $(CFLAGS) $^ -o $@
 
-build/tests/main_tests.o: tests/main.c thirdparty/ctest.h src/Nachalo.h src/Vvod.h
+build/tests/main.o: tests/main.c thirdparty/ctest.h 
 	$(OBJ) -I thirdparty -I src
 
 bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
@@ -28,9 +28,7 @@ build/src/Vvod.o: src/Vvod.c src/Vvod.h
 build/src/main.o: src/main.c
 	$(OBJ)
 
-build:
-	mkdir  build
-bin:
-	mkdir -p bin 
+ 
 clean:
-	-rm -rf build bin/prog
+
+	rm -rf bin build
