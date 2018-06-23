@@ -28,6 +28,7 @@ int main()
 	if (N == 1){
 		system ("clear");
 		nachalo();
+		systen ("pause");
 		vvod();
 		continue;	
 		}
