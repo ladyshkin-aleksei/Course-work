@@ -62,7 +62,8 @@ void vvod()
 			neizvestnie--;
 			Slovo[i] = slovo[i];
 			system ("clear");				
-			printf ("%s%s", Slovo);
+			printf ("%s", Slovo);
+			system ("clear");
 			pravilno = true;				
 			}
 			
