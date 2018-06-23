@@ -1,5 +1,6 @@
-#include <iostream>
-#include <stdio.h>
+//#include <iostream>
+//#include <stdio.h>
+#include "Nachalo.h"
 
 
 using namespace std;
