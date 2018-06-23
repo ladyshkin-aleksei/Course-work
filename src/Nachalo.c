@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <ctime>
+#include <math.h>
 
 using namespace std;
 
@@ -16,6 +17,6 @@ void nachalo()
 	cout << '\n';
 	cout << "Игра началась!" << '\n';
 	cout << '\n';
-	cout << "Для продолжения нажмите Entr" <<'\n';
+	system("pause");
 	system("clear");
 }
