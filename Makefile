@@ -12,7 +12,7 @@ default: bin/prog
 tests: bin/tests
 	$<
 
-bin/tests: build/tests/Nachalo.o build/src/Vvod.o build/src/main.o
+bin/tests: build/tests/main.o build/src/Vvod.o build/src/Nachalo.o
 	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
 
