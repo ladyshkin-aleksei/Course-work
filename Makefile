@@ -24,7 +24,7 @@ bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
 	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
  
-build/src/Nachalo.o: src/Nachalo.c
+build/src/Nachalo.o: src/Nachalo.c src/Nachalo.h
 	$(MKDIR_BUILD_SRC)
 	$(OBJ)
 
