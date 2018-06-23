@@ -1,4 +1,4 @@
-//#include "Nachalo.c"
+#include "Nachalo.h"
 #include "Vvod.h"
 #include <iostream>
 #include <stdio.h>
