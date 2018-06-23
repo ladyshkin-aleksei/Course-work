@@ -10,7 +10,7 @@ all: bin build  bin/prog
 bin/prog: build/Main.o
 	$(CC) $(CFLAGS) $^ -o $@
 
-build/main.o: src/Main.c
+build/Main.o: src/Main.c
 	$(OBJ)
 
 build:
