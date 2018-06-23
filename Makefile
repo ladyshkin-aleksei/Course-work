@@ -3,9 +3,9 @@ CFLAGS = -Wall -Werror -std=c++11
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 MKDIR_BUILD_SRC = mkdir -p build/src
-MKDIR_BUILD_TEST = mkdir -p build/test
+MKDIR_BUILD_TESTS = mkdir -p build/tests
 
-.PHONY: clean test
+.PHONY: clean tests
 
 default: bin/prog
 
@@ -17,7 +17,7 @@ bin/tests: build/tests/Nachalo.o build/src/Vvod.o build/src/main.o
 	$(CC) $(CFLAGS) $^ -o $@
 
 build/tests/main.o: tests/main.c thirdparty/ctest.h
-	$(MKDIR_BUILD_TEST) 
+	$(MKDIR_BUILD_TESTS) 
 	$(OBJ) -I thirdparty -I src
 
 bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
