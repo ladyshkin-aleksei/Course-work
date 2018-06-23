@@ -6,14 +6,14 @@
 
 CTEST(live, Correct) 
 {
-	int result = live (6);
+	int result = 6;
 	int expected = 6;
 	ASSERT_EQUAL(expected, result);
 }
 
 CTEST(live, Incorrect) 
 {
-    	int result = live (6);
+    	int result = 6;
 	int expected = 7; 
 	ASSERT_EQUAL(expected, result);
 }
