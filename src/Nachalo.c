@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <unistd.h>
 
 using namespace std;
 
@@ -16,8 +17,7 @@ void nachalo()
 	cout << "Игра началась!" << '\n';
 	cout << '\n';
 	cout << "Нажмите любую клавишу для продолжения" << '\n';
-	getchar();
-	return 0;
+	pause ();
 	system ("clear"); 
 
 }
