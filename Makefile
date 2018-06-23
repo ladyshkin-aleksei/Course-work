@@ -10,7 +10,7 @@ default: bin/prog
 tests: bin/tests
 	$<
 
-bin/tests: build/tests/Nachalo.o build/tests/Vvod.o build/tests/main.o
+bin/tests: build/tests/Nachalo.o build/src/Vvod.o build/src/main.o
 	$(CC) $(CFLAGS) $^ -o $@
 
 build/tests/main.o: tests/main.c thirdparty/ctest.h 
