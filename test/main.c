@@ -1,8 +1,8 @@
 #define CTEST_MAIN
 
 #include <ctest.h>
-#include <Nachalo.h>
-#include <Vvod.h>
+#include "Nachalo.h"
+#include "Vvod.h"
 
 CTEST(live, Correct) 
 {
