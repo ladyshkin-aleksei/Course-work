@@ -107,9 +107,10 @@ void vvod()
 			}
 
 			if (live == 0){
-				`system ("clear");
+				system ("clear");
 				cout << "Вы проиграли((" << '\n';
 				break;
+				}
 				
 			if (neizvestnie == 0){
 				system ("clear");
