@@ -6,6 +6,7 @@ using namespace std;
 
 void nachalo()
 {
+	int Entr;
 	setlocale(LC_ALL, "rus");	
 	cout << "Правила игры: " << '\n';
 	cout << '\n';
@@ -17,7 +18,7 @@ void nachalo()
 	cout << "Игра началась!" << '\n';
 	cout << '\n';
 	cout << "Нажмите любую клавишу для продолжения" << '\n';
-	system ("pause");
+	cin >> Entr;
 	system ("clear"); 
 
 }
