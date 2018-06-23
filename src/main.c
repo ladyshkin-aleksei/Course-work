@@ -27,6 +27,7 @@ int main()
 	    
 	if (N == 1){
 		system ("clear");
+		cout << '\n';
 		nachalo();
 		vvod();
 		continue;	
