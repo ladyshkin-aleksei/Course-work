@@ -62,7 +62,9 @@ void vvod()
 			neizvestnie--;
 			Slovo[i] = slovo[i];
 			system ("clear");				
-			printf (Slovo, "%s") '\n';
+			printf (Slovo, "%s");
+			cout << '\n';
+			cout << '\n';
 			pravilno = true;				
 			}
 			
@@ -78,33 +80,33 @@ void vvod()
 		switch (live){
 
 			case 1:
-				cout << endl;
-				cout << "Осталась 1 жизнь" << endl;
+				cout << '\n';
+				cout << "Осталась 1 жизнь" << '\n';
 				break;
 				
 			case 2:
-				cout << endl;
-				cout << "Осталось 2 жизни" << endl;
+				cout << '\n';
+				cout << "Осталось 2 жизни" << '\n';
 				break;
 
 			case 3:
-				cout << endl;
-				cout << "Осталось 3 жизни" << endl;
+				cout << '\n';
+				cout << "Осталось 3 жизни" << '\n';
 				break;
 					
 			case 4:
-				cout << endl;
-				cout << "Осталось 4 жизни" << endl;
+				cout << '\n';
+				cout << "Осталось 4 жизни" << '\n';
 				break;
 					
 			case 5:
-				cout << endl;
-				cout << "Осталось 5 жизней" << endl;
+				cout << '\n';
+				cout << "Осталось 5 жизней" << '\n';
 				break;
 					
 			case 6:
-				cout << endl;
-				cout << "Осталось 6 жизней" << endl;
+				cout << '\n';
+				cout << "Осталось 6 жизней" << '\n';
 				break;
 			}
 				
@@ -117,7 +119,7 @@ void vvod()
 			if (live == 0){
 				live--;
 				system ("clear");
-				cout << "Вы проиграли((" << endl;
+				cout << "Вы проиграли((" << '\n';
 				break;
 				}
 
