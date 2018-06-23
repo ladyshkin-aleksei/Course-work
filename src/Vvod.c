@@ -59,7 +59,7 @@ void vvod()
 		if(bukva == slovo[i]){
 			neizvestnie--;
 			Slovo[i] = slovo[i];
-			system ("cls");				
+			system ("clear");				
 			printf ("%s", Slovo);
 			pravilno = true;				
 			}
@@ -107,13 +107,13 @@ void vvod()
 			}
 
 			if (live == 0){
-				system ("cls");
+				system ("clear");
 				cout << "Вы проиграли((" << '\n';
 				break;
 				}
 				
 			if (neizvestnie == 0){
-				system ("cls");
+				system ("clear");
 				cout << "Вы выйграли!!!" << '\n';
 				break;
 				}
