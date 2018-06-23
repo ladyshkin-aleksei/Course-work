@@ -4,17 +4,17 @@
 #include <Nachalo.h>
 #include <Vvod.h>
 
-CTEST(Menu_move, Correct) 
+CTEST(live, Correct) 
 {
-	int result = checkmenu(20);
-	int expected = 1;
+	int result = live (6);
+	int expected = 6;
 	ASSERT_EQUAL(expected, result);
 }
 
-CTEST(Menu_move, Incorrect) 
+CTEST(live, Incorrect) 
 {
-    	int result = input_check(10); 
-	int expected = 0; 
+    	int result = live (6);
+	int expected = 7; 
 	ASSERT_EQUAL(expected, result);
 }
 
