@@ -32,9 +32,9 @@ void vvod()
 		pravilno = false;
 		for (int i=0; i<26; i++)
 		if(bukva == alphavit[i]){	
-		pravilno = true;
-		break;
-		}
+			pravilno = true;
+			break;
+			}
 			
 		if (!pravilno){
 			cout << '\n';
@@ -59,7 +59,7 @@ void vvod()
 		if(bukva == slovo[i]){
 			neizvestnie--;
 			Slovo[i] = slovo[i];
-			system ("clear");				
+			system ("cls");				
 			printf ("%s", Slovo);
 			pravilno = true;				
 			}
@@ -107,13 +107,13 @@ void vvod()
 			}
 
 			if (live == 0){
-				system ("clear");
+				system ("cls");
 				cout << "Вы проиграли((" << '\n';
 				break;
 				}
 				
 			if (neizvestnie == 0){
-				system ("clear");
+				system ("cls");
 				cout << "Вы выйграли!!!" << '\n';
 				break;
 				}
