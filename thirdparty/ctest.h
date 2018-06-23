@@ -415,7 +415,7 @@ static uint64_t getCurrentTime(void) {
 
 static void color_print(const char* color, const char* text) {
     if (color_output)
-        printf( "%s%s"ANSI_NORMAL"\n", color, text);
+        printf("%s%s"ANSI_NORMAL"\n", color, text);
     else
         printf("%s\n", text);
 }
