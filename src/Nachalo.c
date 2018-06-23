@@ -18,5 +18,5 @@ void nachalo()
 	cout << "Игра началась!" << '\n';
 	cout << '\n';
 	system("pause");
-	system("clear");
+//	system("clear");
 }
