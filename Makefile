@@ -7,10 +7,16 @@ OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 
 all: bin build  bin/prog
 
-bin/prog: build/Main.o
+bin/prog: build/Nachalo.o build/Vvod.o build/main.o
 	$(CC) $(CFLAGS) $^ -o $@
+ 
+build/Nachalo.o: src/Nachalo.c
+	$(OBJ)
 
-build/Main.o: src/Main.c
+build/Vvod.o: src/Vvod.c
+	$(OBJ)
+
+build/main.o: src/main.c
 	$(OBJ)
 
 build:
