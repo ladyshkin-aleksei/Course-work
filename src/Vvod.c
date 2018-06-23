@@ -63,7 +63,6 @@ void vvod()
 			Slovo[i] = slovo[i];
 			system ("clear");				
 			printf ("%s", Slovo);
-			system ("clear");
 			pravilno = true;				
 			}
 			
@@ -76,49 +75,55 @@ void vvod()
 			live--;		
 			}
 				
-		switch (live){
-					
-			case 1:
-				cout << '\n';
-				cout << "Осталась 1 жизнь" << '\n';
-				break;
-				
-			case 2:
-				cout << '\n';
-				cout << "Осталось 2 жизни" << '\n';
-				break;
-
-			case 3:
-				cout << '\n';
-				cout << "Осталось 3 жизни" << '\n';
-				break;
-					
-			case 4:
-				cout << '\n';
-				cout << "Осталось 4 жизни" << '\n';
-				break;
-					
-			case 5:
-				cout << '\n';
-				cout << "Осталось 5 жизней" << '\n';
-				break;
-					
-			case 6:
-				cout << '\n';
-				cout << "Осталось 6 жизней" << '\n';
-				break;
-			}
-
-			if (live == 0){
-				system ("clear");
-				cout << "Вы проиграли((" << '\n';
-				break;
+				if (live == 6)
+				{
+					cout << endl;
+					cout << "Îñòàëîñü 6 æèçíåé" << endl;
 				}
 				
-			if (neizvestnie == 0){
-				system ("clear");
-				cout << "Вы выйграли!!!" << '\n';
-				break;
+				if (live == 5)
+				{
+					cout << endl;
+					cout << "Îñòàëîñü 5 æèçíåé" << endl;
+				}
+				
+				if (live == 4)
+				{
+					cout << endl;
+					cout << "Îñòàëîñü 4 æèçíè" << endl;
+				}
+				
+				if (live == 3)
+				{
+					cout << endl;
+					cout << "Îñòàëîñü 3 æèçíè" << endl;
+				}
+				
+				if (live == 2)
+				{
+					cout << endl;
+					cout << "Îñòàëîñü 2 æèçíè" << endl;
+				}
+				
+				if (live == 1)
+				{
+					cout << endl;
+					cout << "Îñòàëàñü 1 æèçíü" << endl;
+				}
+				
+				if (live == 0)
+				{
+					live--;
+					system ("cls");
+					cout << "Âû ïðîèãðàëè((" << endl;
+					break;
+				}
+				
+				if (neizvestnie == 0)
+				{
+					system ("cls");
+					cout << "Âû âûéãðàëè!!!" << endl;
+					break;
 				}
 		}
 }
