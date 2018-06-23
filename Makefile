@@ -2,6 +2,8 @@ CC = g++
 CFLAGS = -Wall -Werror -std=c++11
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
+MKDIR_BUILD_SRC = mkdir -p build/src
+MKDIR_BUILD_TEST = mkdir -p build/test
 
 .PHONY: clean test
 
@@ -11,21 +13,27 @@ tests: bin/tests
 	$<
 
 bin/tests: build/tests/Nachalo.o build/src/Vvod.o build/src/main.o
+	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
 
-build/tests/main.o: tests/main.c thirdparty/ctest.h 
+build/tests/main.o: tests/main.c thirdparty/ctest.h
+	$(MKDIR_BUILD_TEST) 
 	$(OBJ) -I thirdparty -I src
 
 bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
+	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
  
 build/src/Nachalo.o: src/Nachalo.c src/Nachalo.h
+	$(MKDIR_BUILD_SRC)
 	$(OBJ)
 
 build/src/Vvod.o: src/Vvod.c src/Vvod.h
+	$(MKDIR_BUILD_SRC)
 	$(OBJ)
 
 build/src/main.o: src/main.c
+	$(MKDIR_BUILD_SRC)
 	$(OBJ)
 
  
