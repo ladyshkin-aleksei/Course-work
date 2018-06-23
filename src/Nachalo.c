@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdio.h>
-#include <ctime>
-#include <math.h>
+#include <conio.h>
 
 using namespace std;
 
