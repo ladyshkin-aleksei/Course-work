@@ -16,6 +16,9 @@ void nachalo()
 	cout <<("a b c d e f g h i j k l m n o p q r s t u v w x y z")<< '\n';
 	cout << '\n';
 	cout << "Игра началась!" << '\n';
-	cin >> "Нажмите любую клавишу для продолжения"; 
+	cout << '\n';
+	cout << "Нажмите любую клавишу для продолжения" << '\n';
+	cin >> ;
+	system ("clear"); 
 
 }
