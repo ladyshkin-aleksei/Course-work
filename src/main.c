@@ -28,7 +28,6 @@ int main()
 	if (N == 1){
 		system ("clear");
 		nachalo();
-		system ("pause");
 		vvod();
 		continue;	
 		}
