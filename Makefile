@@ -2,41 +2,26 @@ CC = g++
 CFLAGS = -Wall -Werror -std=c++11
 
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
-MKDIR_BUILD_SRC = mkdir -p build/src
-MKDIR_BUILD_TEST = mkdir -p build/test
 
-.PHONY: clean test
+.PHONY: clean all bin build  bin/prog
 
-default: bin/prog
+all: bin build  bin/prog
 
-test: bin/test
-	$<
-
-bin/test: build/test/main.o build/src/Vvod.o build/src/Nachalo.o
-	mkdir -p bin
-	$(CC) $(CFLAGS) $^ -o $@
-
-build/test/main.o: test/main.c thirdparty/ctest.h
-	$(MKDIR_BUILD_TEST) 
-	$(OBJ) -I thirdparty -I src
-
-bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
-	mkdir -p bin
+bin/prog: build/Nachalo.o build/Vvod.o build/main.o
 	$(CC) $(CFLAGS) $^ -o $@
  
-build/src/Nachalo.o: src/Nachalo.c src/Nachalo.h
-	$(MKDIR_BUILD_SRC)
+build/Nachalo.o: src/Nachalo.c src/Nachalo.h
 	$(OBJ)
 
-build/src/Vvod.o: src/Vvod.c src/Vvod.h
-	$(MKDIR_BUILD_SRC)
+build/Vvod.o: src/Vvod.c
 	$(OBJ)
 
-build/src/main.o: src/main.c
-	$(MKDIR_BUILD_SRC)
+build/main.o: src/main.c
 	$(OBJ)
 
- 
+build:
+	mkdir  build
+bin:
+	mkdir -p bin 
 clean:
-
-	rm -rf bin build
+	-rm -rf build bin/prog
