@@ -12,7 +12,7 @@ default: bin/prog
 test: bin/test
 	$<
 
-bin/test: build/test/main.o build/src/Vvod.o build/src/Nachalo.o
+bin/test: build/test/main.o build/src/Nachalo.o build/src/Vvod.o 
 	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
 
@@ -24,7 +24,7 @@ bin/prog: build/src/Nachalo.o build/src/Vvod.o build/src/main.o
 	mkdir -p bin
 	$(CC) $(CFLAGS) $^ -o $@
  
-build/src/Nachalo.o: src/Nachalo.c src/Nachalo.h
+build/src/Nachalo.o: src/Nachalo.c
 	$(MKDIR_BUILD_SRC)
 	$(OBJ)
 
